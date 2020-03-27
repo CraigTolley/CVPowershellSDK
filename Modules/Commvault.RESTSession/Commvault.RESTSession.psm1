@@ -660,8 +660,8 @@ function GetAPIDetail ([String] $Request) {
                 Body        = ''
             
             }
-			'Enable-CVClientActivity' = @{
-        
+			      
+            'Enable-CVClientActivity' = @{
                 Description = 'Enable activities on a client on CommServe'
                 Endpoint    = 'Client/{clientId}'
                 Method      = 'Post'
@@ -672,6 +672,23 @@ function GetAPIDetail ([String] $Request) {
             'Disable-CVClientActivity' = @{
         
                 Description = 'Disable activities on a client on CommServe'
+                Endpoint    = 'Client/{clientId}'
+                Method      = 'Post'
+                Body        = ''
+            
+            }
+            
+            'Add-CVClientToClientGroup' = @{
+                Description = 'Add the specified client from the specified client groups'
+                Endpoint    = 'Client/{clientId}'
+                Method      = 'Post'
+                Body        = ''
+            
+            }
+
+            'Remove-CVClientFromClientGroup' = @{
+        
+                Description = 'Remove the specified client from the specified client groups'
                 Endpoint    = 'Client/{clientId}'
                 Method      = 'Post'
                 Body        = ''
